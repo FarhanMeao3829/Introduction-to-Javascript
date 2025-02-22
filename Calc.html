@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      h1 {
+        font-family: cursive;
+        font-size: 59px;
+        text-align: center;
+        color: rgb(255, 64, 0);
+      }
+
+      body {
+        background-color: rgb(255, 255, 187);
+      }
+
+      p {
+        font-family: cursive;
+        font-size: 22px;
+        text-align: center;
+        color: rgb(255, 64, 0);
+        font-weight: bold;
+      }
+
+      h2 {
+        text-align: center;
+        font-weight: bold;
+        font-family: cursive;
+        color: rgb(255, 64, 0);
+        font-size: 35px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><u>Simple Calculator</u></h1>
+    <h2>Do math with Javascript</h2>
+    <p id="add"></p>
+    <p id="sub"></p>
+    <p id="mul"></p>
+    <p id="div"></p>
+
+    <img
+      style="display: block; margin: 0 auto"
+      src="cat math.jpg"
+      alt="cat math"
+      height="500"
+    />
+
+    <script>
+      var num1 = 10;
+      var num2 = 2;
+
+      var add = num1 + num2;
+      var sub = num1 - num2;
+      var mul = num1 * num2;
+      var div = num1 / num2;
+
+      document.getElementById("add").innerHTML = "The added value is: " + add;
+
+      document.getElementById("sub").innerHTML =
+        "The subtracted value is: " + sub;
+
+      document.getElementById("mul").innerHTML =
+        "The multiplied value is: " + mul;
+
+      document.getElementById("div").innerHTML = "The divided value is: " + div;
+    </script>
+  </body>
+</html>
